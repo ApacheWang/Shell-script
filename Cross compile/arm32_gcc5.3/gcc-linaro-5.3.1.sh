@@ -10,6 +10,8 @@ wget https://releases.linaro.org/components/toolchain/binaries/5.3-2016.05/arm-l
 xz -d gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf.tar.xz
 tar -xvf gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf.tar -C /opt/toolchain/
 
-cp /etc/bash.bashrc /etc/bash.bashrc_gcc5.3_arm32.bak
-cat config_arm32 >> /etc/bash.bashrc_gcc5.3_arm32.bak
-source /etc/bash.bashrc_gcc5.3_arm32.bak
+cp /etc/bash.bashrc /etc/bash.bashrc_gcc5.3_arm32
+cat config_arm32 >> /etc/bash.bashrc_gcc5.3_arm32
+
+# For your current shell then execute this
+#source /etc/bash.bashrc_gcc5.3_arm32
